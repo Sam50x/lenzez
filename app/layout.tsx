@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Background from "./components/Background";
-import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,12 +27,7 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-hidden`}
       >
-        <Background />
-        <main className="z-10 absolute">
-          <nav className="p-6 lg:p-8 lg:px-20 transition-all duration-300 w-screen flex justify-between items-center">
-            <Link href={'/'} className="text-3xl lg:text-5xl font-bold">Lenzez</Link>
-            <p className="font-semibold">AI-Powered Image Editor</p>
-          </nav>
+        <main>
           {children}
         </main>
       </body>

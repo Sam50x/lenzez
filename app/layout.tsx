@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Sidebar from './ui/Sidebar'
 
 export const metadata: Metadata = {
   title: "Lenzez",
@@ -14,10 +15,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased overflow-hidden`}
+        className={`antialiased`}
       >
-        <main className="bg-primary min-h-screen font-gugi">
-          {children}
+        <main className="bg-background min-h-screen font-gugi">
+          <Sidebar />
+          <section className="">
+            {children}
+          </section>
         </main>
       </body>
     </html>

@@ -10,8 +10,10 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.2",
+    "@heroicons/react": "^2.2.0",
     "@supabase/supabase-js": "^2.52.0",
     "cloudinary": "^2.7.0",
+    "clsx": "^2.1.1",
     "fs": "^0.0.1-security",
     "gsap": "^3.13.0",
     "next": "15.3.5",

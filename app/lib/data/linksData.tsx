@@ -1,42 +1,44 @@
+import { HomeIcon, ScissorsIcon, ArrowsPointingOutIcon, BackspaceIcon, ArrowPathIcon, ArchiveBoxXMarkIcon, ArrowsRightLeftIcon, SparklesIcon } from "@heroicons/react/24/solid"
+
 export const linksData = [
     {
         name: "Home",
         path: "/",
-        icon: "",
+        icon: <HomeIcon />,
     },
     {
         name: "Crop",
         path: "/services/crop",
-        icon: "",
+        icon: <ScissorsIcon />,
     },
     {
-        name: "Gen Fill",
+        name: "Generative Fill",
         path: "/services/gen_fill",
-        icon: "",
+        icon: <ArrowsPointingOutIcon />,
     },
     {
-        name: "Remove Bg",
+        name: "Remove Background",
         path: "/services/remove_bg",
-        icon: "",
+        icon: <BackspaceIcon />,
     },
     {
-        name: "Replace Bg",
+        name: "Replace Background",
         path: "/services/replace_bg",
-        icon: "",
+        icon: <ArrowPathIcon />,
     },
     {
-        name: "Remove Obj",
+        name: "Remove Object",
         path: "/services/remove_obj",
-        icon: "",
+        icon: <ArchiveBoxXMarkIcon />,
     },
     {
-        name: "Replace Obj",
+        name: "Replace Object",
         path: "/services/replace_obj",
-        icon: "",
+        icon: <ArrowsRightLeftIcon />,
     },
     {
         name: "Enhance",
         path: "/services/enhance",
-        icon: "",
+        icon: <SparklesIcon />,
     },
 ]

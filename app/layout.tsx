@@ -17,7 +17,7 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
-        <main className="bg-primary min-h-screen font-gugi">
+        <main className="bg-background min-h-screen font-gugi">
           <Sidebar />
           <section className="">
             {children}

@@ -15,11 +15,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`antialiased overflow-hidden`}
+        className={`antialiased`}
       >
         <main className="bg-primary min-h-screen font-gugi">
           <Sidebar />
-          {children}
+          <section className="">
+            {children}
+          </section>
         </main>
       </body>
     </html>

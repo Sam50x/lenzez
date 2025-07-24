@@ -24,6 +24,8 @@ export const signOutWithGoogle = async () => {
         console.error(`Login error: ${error}`)
         return
     }
+
+    window.location.reload()
 }
 
 export const getUser = async () => {
@@ -53,7 +55,7 @@ export const getAllImages = async () => {
         }
 
         console.log(data)
-        return data
+        return data.images
     }
     catch (e) {
         console.error(e)

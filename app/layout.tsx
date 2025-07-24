@@ -14,12 +14,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`antialiased`}
-      >
-        <main className="bg-background min-h-screen font-gugi">
+      <body className="antialiased">
+        <main className="bg-background min-h-screen font-gugi flex flex-col lg:flex-row-reverse">
           <Sidebar />
-          <section className="">
+          <section className="mb-12 mt-6 lg:mt-0 lg:w-4/5 text-text">
             {children}
           </section>
         </main>

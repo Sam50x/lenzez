@@ -67,7 +67,7 @@ const Sidebar = () => {
 
     return (
         <nav className="relative">
-            <aside className={clsx("bg-secondary min-h-screen lg:w-1/5 lg:min-w-80 transition-all duration-300 z-20 fixed top-0 left-0 shadow-xl", {
+            <aside className={clsx("bg-secondary min-h-screen lg:w-1/5 transition-all duration-300 z-20 fixed top-0 left-0 shadow-xl", {
                 "w-80": isSidebarOpen,
                 "w-0 overflow-hidden": !isSidebarOpen
             }

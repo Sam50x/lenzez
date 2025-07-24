@@ -36,10 +36,10 @@ const Sidebar = () => {
 
         return (
             <Link key={index} href={path} className={clsx(
-                "w-full px-4 lg:px-6 h-16 lg:h-20 flex flex-row gap-4 justify-start items-center text-h5",
+                "w-full px-4 lg:px-6 h-16 lg:h-20 flex flex-row gap-4 justify-start items-center text-h5 transition-all duration-300",
                 { "bg-accent text-background": pathName === path },
-                { "text-text": pathName !== path }
-            )} >
+                { "bg-secondary text-text hover:text-background hover:bg-accent": pathName !== path }
+            )}>
                 <span className="[&>svg]:h-[1em] [&>svg]:w-[1em] [&>svg]:-mt-0.5">
                     {icon}
                 </span>
@@ -77,7 +77,7 @@ const Sidebar = () => {
                         {LinksItems}
                     </div>
                     <div className="px-4 lg:px-6 pb-4">
-                        <button className="w-full bg-accent text-background px-4 py-3 rounded-lg hover:opacity-90 transition-all duration-300 cursor-pointer" onClick={switchSignIn}>
+                        <button className="w-full bg-accent text-background px-4 py-3 rounded-lg transition-all duration-300 cursor-pointer hover:opacity-80" onClick={switchSignIn}>
                             {isWorkingNow ? 'Working on it...' : isUserLoggedIn ? 'Sign Out' : 'Sign In With Google'}
                         </button>
                     </div>

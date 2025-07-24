@@ -23,7 +23,7 @@ export default function Home() {
         <div className="bg-primary w-full h-full rounded-xl absolute inset-0 z-5 opacity-30">
         </div>
         <Image
-          src={'/images/hero-sky.jpg'}
+          src={'/images/hero-sky.webp'}
           width={3504}
           height={2336}
           alt="sky"

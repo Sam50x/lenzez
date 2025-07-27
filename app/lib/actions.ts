@@ -340,7 +340,7 @@ export const removeBackgroundImage = async (image: File) => {
     }
 }
 
-export const replaceBackgroundImage = async (image: File, prompt: string) => {
+export const replaceBackgroundImage = async (image: File, prompt = 'Rainforest') => {
     //uploadImageToCloudinary() -> replace bg -> addImageToSupabase()
 
     try {
@@ -379,7 +379,7 @@ export const replaceBackgroundImage = async (image: File, prompt: string) => {
     }
 }
 
-export const removeObjectImage = async (image: File, prompt: string) => {
+export const removeObjectImage = async (image: File, prompt = 'Head') => {
     //uploadImageToCloudinary() -> remove obj -> addImageToSupabase()
 
     try {

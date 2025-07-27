@@ -4,7 +4,6 @@ import OutlineBtn from "@/app/ui/services/OutlineBtn"
 import SolidBtn from "@/app/ui/services/SolidBtn"
 import clsx from "clsx"
 import { ChangeEvent, useRef, useState } from "react"
-import Image from "next/image"
 import { addImageToSupabaseTable, cropImage, getUser, urlToFile } from "@/app/lib/actions"
 
 type InputInfo = {
@@ -115,27 +114,23 @@ const Crop = () => {
                 </div>
             </div>
             <div className="flex lg:flex-row justify-center items-start gap-8 mt-12 flex-wrap">
-                <div className="min-w-58 w-1/2 max-w-96">
+                <div className="w-96">
                     {inputInfo.image ?
-                        <Image
+                        <img
                             src={previewUrl}
-                            width={1000}
-                            height={1000}
                             alt={`Before Image`}
-                            className="object-cover rounded-2xl aspect-square"
+                            className="object-cover rounded-2xl aspect-square w-full"
                         />
                         : <div className="bg-secondary aspect-square rounded-2xl">
                         </div>
                     }
                 </div>
-                <div className="rounded-2xl min-w-58 w-1/2 max-w-96">
+                <div className="w-96">
                     {afterImage ?
-                        <Image
+                        <img
                             src={afterImage}
-                            width={1000}
-                            height={1000}
                             alt={`After Image`}
-                            className="object-cover rounded-2xl aspect-square"
+                            className="object-cover rounded-2xl aspect-square w-full"
                         />
                         : <div className="bg-secondary aspect-square rounded-2xl">
                         </div>

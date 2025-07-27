@@ -1,6 +1,10 @@
 import cloudinary from "@/app/lib/cloudinary";
 import { NextResponse, NextRequest } from "next/server";
 
+export const config = {
+    runtime: 'nodejs'
+}
+
 export async function POST(req: NextRequest) {
     try {
 

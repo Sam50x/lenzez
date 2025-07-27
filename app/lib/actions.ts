@@ -145,6 +145,13 @@ export const addImageToSupabaseTable = async (image: File) => {
     }
 }
 
+export const urlToFile = async (url: string, filename: string): Promise<File> => {
+    const res = await fetch(url)
+    const blob = await res.blob()
+    const mime = blob.type || 'image/*'
+    return new File([blob], filename, { type: mime })
+}
+
 export const uploadImageToCloudinary = async (image: File) => {
     //upload image -> return public_id
     console.log('I am here: ', image)

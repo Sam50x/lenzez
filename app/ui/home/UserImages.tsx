@@ -53,7 +53,7 @@ const UserImages = () => {
                     width={1000}
                     height={1000}
                     alt={`Image with index ${index}`}
-                    className="object-cover rounded-2xl"
+                    className="object-cover aspect-square rounded-2xl"
                 />
             </div>
         )

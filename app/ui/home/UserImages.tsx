@@ -68,7 +68,7 @@ const UserImages = () => {
                     images.length > 0 ?
                         <div className="flex flex-col">
                             <h4 className="text-h5">Your Images</h4>
-                            <div className="flex flex-row justify-start items-center flex-wrap pt-4 gap-8">
+                            <div className="flex flex-row justify-center items-center flex-wrap pt-4 gap-8">
                                 {imagesItems}
                             </div>
                         </div>

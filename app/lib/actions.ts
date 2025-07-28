@@ -418,7 +418,7 @@ export const removeObjectImage = async (image: File, prompt = 'Head') => {
     }
 }
 
-export const replaceObjectImage = async (image: File, prompt_to: string, prompt_from: string) => {
+export const replaceObjectImage = async (image: File, prompt_from: string, prompt_to: string) => {
     //uploadImageToCloudinary() -> replace obj -> addImageToSupabase()
 
     try {

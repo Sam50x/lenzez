@@ -10,6 +10,13 @@ Then this one is for you: Full **Free** AI-Powered Photo Editor, without any req
 
 ---
 
+## Links
+
+- [Live Project](lenzez.vercel.app)
+- [Source Code](https://github.com/Sam50x/lenzez)
+
+---
+
 ## Our Features
 
 - Content-Aware Cropping:
